@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmail" />
+
+        <EditText
+            android:id="@+id/editTextLoginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/enter_email"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tooBad"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/tooBad"
+            app:layout_constraintTop_toBottomOf="@+id/tooBad" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="@string/remember_me"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="login"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxRememberMe"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxRememberMe"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRememberMe" />
+
+        <Button
+            android:id="@+id/btnGoToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="goToRegister"
+            android:text="@string/go_to_register"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnLoginForgotPassword"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="@+id/btnLoginForgotPassword"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginForgotPassword" />
+
+        <Button
+            android:id="@+id/btnLoginForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="forgotPassword"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_login"
+            android:textSize="36sp"
+            android:textColor="#ed5909"
+            android:layout_margin="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tooBad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_login"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewLogin"
+            app:layout_constraintStart_toStartOf="@+id/textViewLogin"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLogin"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

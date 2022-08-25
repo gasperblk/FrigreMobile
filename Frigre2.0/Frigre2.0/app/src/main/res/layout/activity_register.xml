@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="goToLogin"
+            android:text="@string/go_to_login"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+            app:layout_constraintStart_toStartOf="@+id/btnRegister"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+        <EditText
+            android:id="@+id/editTextRegisterPasswordAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/enter_password_again"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_register"
+            android:textSize="36sp"
+            android:textColor="#ed5909"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.00" />
+
+        <Spinner
+            android:id="@+id/spinnerRegisterCollege"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterNickname"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterNickname"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterNickname"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextRegisterNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/nickname"
+            android:autofillHints="nickname"
+            android:inputType="textPersonName"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterEmail" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="register"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterPasswordAgain"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterPasswordAgain"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPasswordAgain" />
+
+        <EditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerRegisterCollege"
+            app:layout_constraintStart_toStartOf="@+id/spinnerRegisterCollege"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRegisterCollege" />
+
+        <EditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/enter_email"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#666666"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textViewRegister"
+            app:layout_constraintStart_toStartOf="@+id/textViewRegister"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Frigre</string>
+    <string name="enter_email">Vnesi elektronski naslov</string>
+    <string name="nickname">Izberi vzdevek</string>
+    <string name="college">Izberi fakulteto</string>
+    <string name="enter_password">Vnesi geslo</string>
+    <string name="enter_password_again">Ponovno vnesi geslo</string>
+    <string name="login">Prijavi se</string>
+    <string name="register">Registriraj se</string>
+    <string name="forgot_password">Pozabljeno geslo</string>
+    <string name="go_to_register">Registracija</string>
+    <string name="go_to_login">Prijava</string>
+    <string name="remember_me">Zapomni si me</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_news">Novice</string>
+    <string name="title_rules">Pravila in navodila za sodelovanje</string>
+    <string name="content_rules">Ne bit nesramen pa to pls</string>
+    <string name="title_register">Registracija</string>
+    <string name="title_login">Prijava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_tournaments">Turnirji</string>
+    <string name="title_ladder">Lestvica</string>
+</resources>

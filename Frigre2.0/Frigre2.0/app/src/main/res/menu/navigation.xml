@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/newsFragment"
+            android:icon="@drawable/ic_news"
+            android:title="@string/title_news"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/tournamentFragment"
+            android:icon="@drawable/ic_tournamets"
+            android:title="@string/title_tournaments"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/ladderFragment"
+            android:icon="@drawable/ic_ladder"
+            android:title="@string/title_ladder"
+            app:showAsAction="ifRoom"/>
+</menu>
